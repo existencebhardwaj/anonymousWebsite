@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>NGL by Astitva Bhardwaj</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="bubble">
+      <div id="username">
+        <div id="pfp">
+          <img
+            srch="https://firebasestorage.googleapis.com/v0/b/ask-fun-d10f0.appspot.com/o/images%2FopE4QxtDOgdV3jiCjk9JHOsFWoz2.jpg?alt=media&token=36a539db-0f0c-4fa3-9252-26ecdfc1cd79"
+            alt=""
+          />
+        </div>
+        <div id="textinfo">
+          <p>@existence_bhardwaj</p>
+          <h4>send me anonymous messages!</h4>
+        </div>
+      </div>
+      <div id="messages">
+        <div id="randommsg" onmouseup="randommsg()">🎲</div>
+        <form
+          name="contact"
+          id="contact"
+          method="post"
+          netlify
+          onsubmit="submit"
+        >
+          <textarea
+            name="msgbox"
+            id="msgbox"
+            cols="30"
+            rows="40"
+            placeholder="send me anonymous messages..."
+            maxlength="300"
+            netlify
+          ></textarea>
+        </form>
+        <div class="anonymous-tooltip">🔒 anonymous q&amp;a</div>
+        <button
+          form="contact"
+          class="submit"
+          type="submit"
+          style="transform: translateZ(0px); z-index: 1000"
+        >
+          Send!
+        </button>
+        <footer>Created With ❤️ By Astitva Bhardwaj</footer>
+      </div>
+    </div>
+
+    <script src="main.js"></script>
+  </body>
+</html>
